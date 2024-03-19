@@ -1,19 +1,30 @@
 /*
  * This is a program prints out stuff.
- * @author  Ava Venturino 
- * @version 1.0 
+ * @author  Ava Venturino
+ * @version 1.0
  * @since   2024-02-26
  */
 
 import java.util.Stack;
 
-public class Main {
+/**
+ * This is a standard calculation program.
+ */
 
-    public static void main(String[] args) {
+class Main {
+
+    /**
+     * The starting calculateBoardFoot() function.
+     *
+     * @param args using args
+     *
+     */
+
+    void main(String[] args) {
         // Create stacks for different types of items
-        Stack<String> fruitStack = new Stack<>();
-        Stack<String> colorStack = new Stack<>();
-        Stack<String> animalStack = new Stack<>();
+        final Stack<String> fruitStack = new Stack<>();
+        final Stack<String> colorStack = new Stack<>();
+        final Stack<String> animalStack = new Stack<>();
 
         // Push items onto the fruit stack
         fruitStack.push("apple");
@@ -31,8 +42,8 @@ public class Main {
         animalStack.push("parrot");
 
         // Print out the stacks
-        System.out.println("Fruit items: " + fruitStack.toString() + "\n");
-        System.out.println("Color items: " + colorStack.toString() + "\n");
-        System.out.println("Animals: " + animalStack.toString() + "\n");
+        System.out.println("Fruit items: " + fruitStack.toString());
+        System.out.println("Color items: " + colorStack.toString());
+        System.out.println("Animals: " + animalStack.toString());
     }
 }
