@@ -5,36 +5,24 @@
  * @since   2024-02-26
  */
 
-class MrCoxallStack {
-  private stack: string[];
+import MrCoxallStack from './mrCoxallStack.ts'
 
-  constructor() {
-    this.stack = [];
-  }
+// this function uses the MrCoxallStack
+const fruitStack = new MrCoxallStack()
+fruitStack.push('apple')
+fruitStack.push('banana')
+fruitStack.push('cherry')
 
-  push(value: string): void {
-    this.stack.push(value);
-  }
+const colorStack = new MrCoxallStack()
+colorStack.push('red')
+colorStack.push('green')
+colorStack.push('blue')
 
-  showStack(): string {
-    return this.stack.join(', ');
-  }
-}
+const animalStack = new MrCoxallStack()
+animalStack.push('cow')
+animalStack.push('koala')
+animalStack.push('parrot')
 
-function main(): void {
-  // this function uses the MrCoxallStack
-  const fruitStack = new MrCoxallStack();
-  fruitStack.push('apple');
-  fruitStack.push('banana');
-  fruitStack.push('cherry');
-
-  const colorStack = new MrCoxallStack();
-  colorStack.push('red');
-  colorStack.push('green');
-  colorStack.push('blue');
-
-  console.log(`Fruit items: ${fruitStack.showStack()}\n`);
-  console.log(`Color items: ${colorStack.showStack()}\n`);
-}
-
-main();
+console.log(`Fruit items: ${fruitStack.showStack()}\n`)
+console.log(`Color items: ${colorStack.showStack()}\n`)
+console.log(`Animals: ${animalStack.showStack()}\n`)
