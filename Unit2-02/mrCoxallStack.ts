@@ -23,7 +23,7 @@ class MrCoxallStack {
     let stackValues: string = ""
 
     for (const value of this.stackAsList) {
-      stackValues += value + ","
+      stackValues += value + ", "
     }
     stackValues = stackValues.slice(0, -1) // Remove the trailing comma
 
@@ -35,7 +35,7 @@ class MrCoxallStack {
     let returnValue: string = ""
 
     if (this.stackAsList.length > 0) {
-      const topItem = string = this.stackAsList.pop()!
+      const topItem: string = this.stackAsList.pop()!
       returnValue = topItem
     } else {
       returnValue = "The stack is empty!"
