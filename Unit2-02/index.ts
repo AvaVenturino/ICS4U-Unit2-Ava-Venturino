@@ -12,29 +12,23 @@ const fruitStack = new MrCoxallStack()
 fruitStack.push('apple')
 fruitStack.push('banana')
 fruitStack.push('cherry')
-console.log(`\nFruit items: ${fruitStack.showStack()}`)
-let topFruit: string
-topFruit = fruitStack.pop()!
-console.log(`Popped fruit item: ${topFruit}`)
-console.log(`Fruit items: ${fruitStack.showStack()}`)
+console.log("\nFruit items: " + fruitStack.show)
+console.log("Popped fruit item: " + fruitStack.pop())
+console.log("Fruit items: " + fruitStack.show)
 
 const colorStack = new MrCoxallStack()
 colorStack.push('red')
 colorStack.push('green')
 colorStack.push('blue')
-console.log(`\nColor items: ${colorStack.showStack()}`)
-let topColor: string
-topColor = colorStack.pop()!
-console.log(`Popped color item: ${topColor}`)
-console.log(`Color items: ${colorStack.showStack()}`)
+console.log("\nColor items: " + colorStack.show)
+console.log("Popped color item: " + colorStack.pop())
+console.log("Color items: " + colorStack.show )
 
 const animalStack = new MrCoxallStack()
 animalStack.push('cow')
 animalStack.push('koala')
 animalStack.push('parrot')
-console.log(`\nAnimals: ${animalStack.showStack()}`)
-let topAnimal: string
-topAnimal = animalStack.pop()!
-console.log(`Popped animal item: ${topAnimal}`)
-console.log(`Animals: ${animalStack.showStack()}`)
+console.log("\nAnimals: " + animalStack.show)
+console.log("Popped animal item: " + animalStack.pop())
+console.log("Animals: " + animalStack.show)
 console.log(`\nDone.`)
