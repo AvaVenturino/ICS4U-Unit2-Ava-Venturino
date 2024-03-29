@@ -7,7 +7,7 @@
 
 class MrCoxallStack {
 
-  private strstack: string[]
+private strstack: string[]
 
   // variables
   constructor() {
@@ -16,16 +16,11 @@ class MrCoxallStack {
 
   // checks if stack is empty
   public get isEmpty() {
-    if (this.strStack.length > 0) {
-      return false
-    } else {
-      return true
-    }
-
+    return self.strstack.length == 0
   }
 
   // return top item of stack
-  public get peak():string {
+  public get peak() {
     return self.strstack[self.strstack.length - 1]
   }
 
@@ -37,15 +32,15 @@ class MrCoxallStack {
   // show full stack separated by commas
   public get show() {
     let values = ""
-      if (self.strstack[0]) {
-        for (let counter = 0; counter < self.strstack.length; counter++) {
-          values = values + self.strstack[counter] + ", "
-        }
-        values = values.substring(0, values.length-2)
-      } else {
-        values = "stack is empty"
+    if (self.strstack[0]) {
+      for (let counter = 0; counter < self.strstack.length; counter++) {
+        values = values + self.strstack[counter] + ", "
       }
-      return values
+      values = values.substring(0, values.length-2)
+    } else {
+      values = "stack is empty"
+    }
+    return values
   }
 
   // clear all items off stack
