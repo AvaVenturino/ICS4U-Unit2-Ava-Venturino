@@ -21,7 +21,12 @@ public class MrCoxallStack {
         this.strStack = new ArrayList<>();
     }
 
-    // Check if stack is empty
+    /**
+     * Returns the size of the stack.
+     *
+     * @return strStack                      
+     */
+
     public boolean isEmpty() {
         if (strStack.size() > 0) {
             return false;
@@ -30,7 +35,12 @@ public class MrCoxallStack {
         }
     }
 
-    // Return top item of stack
+    /**
+     * Returns the size of the stack.
+     *
+     * @return strStack                      
+     */
+
     public String peak() {
         if (!isEmpty()) {
             return strStack.get(strStack.size() - 1);
@@ -39,12 +49,22 @@ public class MrCoxallStack {
         }
     }
 
-    // Return stack size
+    /**
+     * Returns the size of the stack.
+     *
+     * @return strStack
+     */
+
     public int size() {
         return strStack.size();
     }
 
-    // Show full stack separated by commas
+    /**
+     * Returns a string representation of the stack.
+     *
+     * @return strStack
+     */
+
     public String show() {
         if (!isEmpty()) {
             StringBuilder values = new StringBuilder();
@@ -57,7 +77,11 @@ public class MrCoxallStack {
         }
     }
 
-    // Clear all items off stack
+    /**                 
+     * Returns the size of the stack.                      
+     *
+     * @return strStack                      
+     */
     public void clear() {
         strStack.clear();
     }
@@ -72,7 +96,12 @@ public class MrCoxallStack {
         strStack.add(input);
     }
 
-    // Pop item from end of list and return value
+    /**
+     * Returns a popped item from the stack.
+     *
+     * @return stackValues
+     */
+
     public String pop() {
         if (!isEmpty()) {
             String removed = strStack.remove(strStack.size() - 1);
