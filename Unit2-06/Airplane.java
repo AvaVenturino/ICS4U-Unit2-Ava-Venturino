@@ -6,23 +6,43 @@
  * @since   2024-04-09
  */
 
-export java.util.Airplane
+/**
+ * This is a standard program.
+ */
 
 public class Airplane {
-    private double speed;
-	      
-    // variables
+
+    /**
+     * This is a standard program.
+     */
+
+    private int speed;
+
+    /**
+     * Represents a stack data structure implemented using a List.
+     * This list stores elements as strings.
+     */
+
     public Airplane() {
-        this.speed = 0;
     }
 
-    // set speed
-    public void setSpeed(double newSpeed) {
-        this.speed = newSpeed;
+    /**
+     * Represents a stack data structure implemented using a List.
+     *
+     * @param speed using speed
+     */
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 
-    // get speed
-    public double getSpeed() {
+    /**
+     * Represents a stack data structure implemented using a List.
+     *
+     * @return this.speed return it
+     */
+
+    public int getSpeed() {
         return this.speed;
     }
 }
