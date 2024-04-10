@@ -1,7 +1,7 @@
 /*
  * Class that defines airplane speed.
  *
- * @author  Samuel Webster
+ * @author  Ava Venturino
  * @version 1.0
  * @since   2024-01-01
  */
@@ -9,22 +9,24 @@
 public class FlyTest {
     public static void main(String[] args) {
         Airplane biplane = new Airplane();
-        biplane.setSpeed(212);
-        System.out.println(biplane.setSpeed);
+        int speedPlane = biplane.setSpeed(212);
+        System.out.println(speedPlane);
         Jet boeing = new Jet();
-        boeing.setSpeed(422);
-        System.out.println(boeing.setSpeed);
-        int x = 0;
-	while (x<5) {
-            boeing.accelerate();
-            System.out.println(biplane.accelerate());
-	    if (biplane.getSpeed() > 5000) {
-                boeing.getSpeed( 108 *2);
-            } else {
-                biplane.getSpeed();
+        int speedJet = boeing.setSpeed(422);
+        System.out.println(speedJet);
+	int counter = 0;
+	while (counter < 4) {
+            speedJet = boeing.accelerate(speedJet);
+            System.out.println(speedJet);
+            if (speedJet < 5000) {
+                speedJet = boeing.accelerate(speedJet);
+                System.out.println(speedJet);
             }
-	    x++;
-	}
-	System.out.println("Done.");
+            counter++;
+        }
+
+        int speedPlane2 = biplane.setSpeed(speedPlane * 8);
+        System.out.println(speedPlane2);
+	System.out.println("\nDone.");
     }
 }

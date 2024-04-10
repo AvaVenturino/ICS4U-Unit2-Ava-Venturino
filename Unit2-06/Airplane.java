@@ -6,6 +6,8 @@
  * @since   2024-04-09
  */
 
+export java.util.Airplane
+
 public class Airplane {
     private double speed;
 	      
@@ -22,22 +24,5 @@ public class Airplane {
     // get speed
     public double getSpeed() {
         return this.speed;
-    }
-}
-
-public class Jet extends Airplane {
-
-    private static final int MULTIPLIER = 2;
-
-    public Jet() {
-        super();
-    }
-
-    public void setspeed(int speed) {
-        super.setSpeed(speed * MULTIPLIER);
-    }
-
-    public void accelerate() {
-        super.setSpeed(getSpeed() * MULTIPLIER);
     }
 }
