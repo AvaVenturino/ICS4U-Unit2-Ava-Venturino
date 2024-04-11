@@ -6,17 +6,18 @@
  * @since 2024-04-09
  */
 
-public export class Airplane {
-  private speed: number
+class Airplane{
+  public speed: number
 
-  constructor() {
-  }
-
-  setSpeed(speed: number): void {
+  constructor(speed: number = 0) {
     this.speed = speed
   }
 
-  getSpeed(): number {
+  // set speed
+  public setSpeed(speed: number): number {
+    this.speed = speed
     return this.speed
   }
 }
+
+export default Airplane

@@ -8,17 +8,13 @@
 
 import Airplane from './airplane.ts'
 
-public export class Jet extends Airplane {
+class Jet extends Airplane {
 
-  constructor() {
-    super()
-  }
-
-  public setspeed(speed: number): void {
-    super.setSpeed(speed * 2)
-  }
-
-  public accelerate(): void {
-    super.setSpeed(super.getSpeed() * 2)
+  // accelerate
+  public accelerate(speed: number) {
+    this.speed = speed * 2
+    return this.speed
   }
 }
+
+export default Jet

@@ -17,16 +17,14 @@ const boeing = new Jet()
 let jetSpeed = boeing.setSpeed(422)
 
 for (let counter = 0; counter < 4; counter++) {
-	  jetSpeed = boeing.accelerate(jetSpeed)
-	    console.log(`${jetSpeed}`)
-	      if (jetSpeed < 5000) {
-		          jetSpeed = boeing.accelerate(jetSpeed)
-			      console.log(`${jetSpeed}`)
-			        }
+  jetSpeed = boeing.accelerate(jetSpeed)
+  console.log(`${jetSpeed}`)
+  if (jetSpeed < 5000) {
+    jetSpeed = boeing.accelerate(jetSpeed)
+    console.log(`${jetSpeed}`)
+  }
 }
 let planeSpeed2 = biplane.setSpeed(planeSpeed * 8)
 console.log(`${planeSpeed2}`)
-
-
 
 console.log("\nDone.")
