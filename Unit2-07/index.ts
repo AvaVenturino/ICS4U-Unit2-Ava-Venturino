@@ -17,12 +17,14 @@ bmx.cadencestatus()
 
 console.log('Set the cadense to 10\n')
 bmx.speed = 20
+bmx.cadence = 10
 bmx.status()
 bmx.cadencestatus()
 
 console.log('\nAccelerate by 15:')
 bmx.accelerate(15)
 bmx.speed = 50
+bmx.cadence = 25
 bmx.status()
 bmx.cadencestatus()
 
@@ -42,8 +44,8 @@ bigTruck.accelerate(10, 10)
 console.log('New speed: ' + bigTruck.speed)
 
 console.log('\nApplyed air pressure of 10:')
-bigTruck.applyAir(10)
-bigTruck.applyAirStatus()
+bigTruck.applyAir(390, 390)
+console.log('New speed: ' + bigTruck.speed)
 
 console.log('\nDone.')
 
