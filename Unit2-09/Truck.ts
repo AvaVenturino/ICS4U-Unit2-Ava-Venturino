@@ -17,6 +17,13 @@ class Truck extends Vehicle {
     this.color = color
     this.tireNum = tireNum
   }
+  
+  brake (breakPower: number, breakTime: number, airPressure: number) {
+    this.speed = this.speed - (breakPower * breakTime) - (airPressure * breakTime)
+    if (this.speed < 0) {
+      this.speed = 0
+    }
+  }
 
   // liscence plate
   plateStatus (): void {
@@ -31,10 +38,6 @@ class Truck extends Vehicle {
   // set tires
   setTires (tireNum: number): void {
     this.tireNum = tireNum
-  }
-  
-  brake (breakPower: number, breakTime: number, airPressure: number) {
-    this.speed = this.speed - (breakPower * breakTime) - (airPressure * breakTime)
   }
 }
 

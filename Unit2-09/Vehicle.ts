@@ -21,16 +21,15 @@ class Vehicle {
   
     // acceleration method
     accelerate (accelerationPower: number, accelerationTime: number) {
-      this.speed += (accelerationPower * accelerationTime)
-      console.log(`New speed: ${this.speed}`)
+      this.speed = (accelerationPower * accelerationTime) + this.speed
+      if (this.speed > this.maxSpeed) {
+        this.speed = this.maxSpeed
+      }
     }
   
     // brake method
     brake (breakPower: number, breakTime: number) {
-        this._speed = this._speed - (breakPower * breakTime)
-        if (this._speed < 0) {
-          this._speed = 0
-       }
+        this.speed = this.speed - (breakPower * breakTime)
     }
     // status method
     status (): void {
