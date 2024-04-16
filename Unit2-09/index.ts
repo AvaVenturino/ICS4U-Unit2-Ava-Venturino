@@ -42,7 +42,7 @@ console.log('\nBreaking, 10 of power for 10 sec.')
 bigTruck.accelerate(10, 10)
 
 console.log('\nApplied air pressure of 10:')
-bigTruck.brake(10)
-bigTruck.applyAir(390, 390)
+bigTruck.brake(10, 10, 10)
+console.log('New speed: ' + bigTruck.speed)
 
 console.log('\nDone.')

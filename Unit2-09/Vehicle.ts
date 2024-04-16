@@ -30,8 +30,8 @@ class Vehicle {
         this._speed = this._speed - (breakPower * breakTime)
         if (this._speed < 0) {
           this._speed = 0
+       }
     }
-  
     // status method
     status (): void {
       console.log(`-> Speed: ${this.speed}`)
