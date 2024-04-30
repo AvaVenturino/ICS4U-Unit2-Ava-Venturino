@@ -39,5 +39,32 @@ class Bike extends Vehicle {
     console.log(`-> Cadence: ${this.cadence}`)
   }
 }
+/**
+ * This is the bike class.
+ *
+ * By: Ava Venturino
+ * Version: 1.0
+ * Since: 2024-04-10
+ */
 
-export default Bike
+import Vehicle from './Vehicle.ts'
+
+class Bike extends Vehicle {
+  private cadence: number
+
+  constructor(color = 'unknown', maxSpeed = 0, speed = 0, cadence = 0, tireNum = 2) {
+    super(maxSpeed, speed)
+    this.cadence = cadence
+    this.color = color
+    this.tireNum = tireNum
+  }
+
+  // accelerate
+  accelerate(appliedPower: number) {
+    this.cadence += appliedPower
+    return this.cadence
+  }
+
+  // set cadense
+  setCadence(cadence: number) {
+    this.cadence = cadence
